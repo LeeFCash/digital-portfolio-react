@@ -1,0 +1,19 @@
+@media all {
+
+@keyframes move2 {
+    0% {
+        opacity: 0.0;
+    }
+
+    /*50% {
+        opacity: 1.5;
+    }*/
+
+    100% {
+        opacity: 1.5;
+        top: 14vh;
+        left: 11vw;
+        font-size: 20px;
+    }
+}
+}

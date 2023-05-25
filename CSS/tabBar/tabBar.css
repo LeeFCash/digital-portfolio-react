@@ -1,0 +1,26 @@
+@media all {
+
+.main-tabBar {
+    position: relative;
+    margin: 8px;
+    border-style: solid;
+    border-color: white;
+    border-width: var(--tab-border);
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+    height: auto;
+}
+
+.main-tabBar-list {
+    display:flex;
+    width: 5vw;
+    position: relative;
+}
+
+
+.main-tabBar-tab-select {
+    background-color: black;
+    color: white;
+}
+}

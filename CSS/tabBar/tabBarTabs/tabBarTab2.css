@@ -1,0 +1,22 @@
+@import "animations.css";
+@media all {
+
+
+.main-tabBar-tab2 {
+    position: relative;
+    margin: -8px;
+    width: var(--tab-width);
+    height: var(--tab-height);
+    font-size: var(--tab-fontSize);
+    color: black;
+    border-color: white;
+    border-width: 1vw;
+    text-underline-position: below;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+.main-tabBar-tab2-animation {
+    animation: tab2 2s ease-in-out forwards;
+}
+}

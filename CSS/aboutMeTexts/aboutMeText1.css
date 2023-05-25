@@ -1,0 +1,14 @@
+@media all {
+
+.main-content-aboutMeContent-text1 {
+    position: absolute;
+    top: 70vh;
+    left: 90vw;
+}
+
+.main-content-aboutMeContent-text1-animation {
+    animation: move1 5s ease-in-out forwards;
+}
+
+
+}

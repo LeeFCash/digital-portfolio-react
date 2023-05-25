@@ -1,0 +1,14 @@
+@media all {
+
+#main-content-aboutMeContent-text1-letter1 {
+    position: absolute;
+    opacity: 1.5;
+    top: 12vh;
+    left: 16vw;
+    font-size: +20px;
+}
+
+.main-content-aboutMeContent-text1-letter1-animation {
+    animation: info-Text1 7s ease-out forwards;
+}
+}

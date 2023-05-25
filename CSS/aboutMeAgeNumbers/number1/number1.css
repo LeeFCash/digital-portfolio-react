@@ -1,0 +1,13 @@
+@media all {
+
+.main-content-aboutMeContent-text2-number1 {
+    position: absolute;
+    top: 16vh;
+    left: 16vw;
+    font-size: 20px;
+}
+
+.main-content-aboutMeContent-text2-number1-animation {
+    animation: info-Text1 7s ease-out forwards;
+}
+}

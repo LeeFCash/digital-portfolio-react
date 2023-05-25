@@ -1,0 +1,67 @@
+@import "animations.css";
+@import "myInfo.css";
+@import "aboutMeImg1.css";
+@import "./aboutMeTexts/aboutMeText1.css";
+@import "./aboutMeTexts/aboutMeText2.css";
+@import "./aboutMeTexts/aboutMeText3.css";
+@import "./tabBar/tabBarTabs/tabBarTab1.css";
+@import "./tabBar/tabBarTabs/tabBarTab2.css";
+@import "./tabBar/tabBarTabs/tabBarTab3.css";
+@import "./aboutMeNameLetters/letters1/letter.css";
+@import "./aboutMeNameLetters/letters1/TextAnimation.css";
+@import "./aboutMeNameLetters/letters2/letter.css";
+@import "./aboutMeNameLetters/letters3/letter.css";
+@import "./aboutMeNameLetters/letters4/letter.css";
+@import "./aboutMeNameLetters/letters5/letter.css";
+@import "./aboutMeNameLetters/letters6/letter.css";
+@import "./aboutMeNameLetters/letters7/letter.css";
+@import "./aboutMeAgeNumbers/number1/number1.css";
+@import "./aboutMeAgeNumbers/number2/number2.css";
+@import "./aboutMeEducationLetters/letter1.css";
+@import "./aboutMeEducationLetters/letter2.css";
+@import "./aboutMeEducationLetters/letter3.css";
+@import "./aboutMeEducationLetters/letter4.css";
+@import "./aboutMeEducationLetters/letter5.css";
+@import "./aboutMeEducationLetters/letter6.css";
+@import "./aboutMeEducationLetters/letter7.css";
+@import "./aboutMeEducationLetters/letter8.css";
+@import "./aboutMeEducationLetters/letter9.css";
+@import "./aboutMeEducationLetters/letter10.css";
+@import "./aboutMeEducationLetters/letter11.css";
+@import "./aboutMeEducationLetters/letter12.css";
+@import "./aboutMeEducationLetters/letter13.css";
+@import "./aboutMeEducationLetters/letter14.css";
+@import "./aboutMeEducationLetters/letter15.css";
+@import "./aboutMeEducationLetters/letter16.css";
+@import "./aboutMeEducationLetters/letter17.css";
+@import "./aboutMeEducationLetters/letter18.css";
+@import "./aboutMeEducationLetters/TextAnimation.css";
+@import "./tabBar/tabBar.css";
+@media all {
+
+:root {
+--tab-border: 1px;
+--tab-height: auto;
+--tab-width: 10;
+--tab-fontSize: 100%;
+}
+body {
+    background-color: black;
+}
+
+.main {
+    position: absolute;
+    margin: -8px;
+    width: 99.9%;
+    height: 100%;
+}
+
+.main-content {
+    color: white;
+}
+
+
+
+
+
+}

@@ -1,0 +1,12 @@
+@media all {
+
+.main-content-aboutMeContent-img1 {
+    position: absolute;
+    width: 10vw;
+    height: 20vh;
+}
+
+.main-content-aboutMeContent-img1-animation {
+    animation: IMGresize 5s ease-in-out forwards;
+}
+}

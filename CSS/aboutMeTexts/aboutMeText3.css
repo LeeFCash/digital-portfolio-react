@@ -1,0 +1,19 @@
+@media all {
+
+.main-content-aboutMeContent-text3 {
+    position: absolute;
+    top: 95vh;
+    left: 20vw;
+}
+
+.main-content-aboutMeContent-text3-letter1 {
+    position: absolute;
+    top: 21vh;
+    left: 16vw;
+    font-size: 20px;
+}
+
+.main-content-aboutMeContent-text3-animation {
+    animation: move3 5s ease-in-out forwards;
+}
+}
