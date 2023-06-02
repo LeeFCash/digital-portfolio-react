@@ -6,8 +6,6 @@
   <title>
     digital portfolio made by LeeCash.
   </title>
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
  </head>
  <body>
   <div class="main">
@@ -39,5 +37,7 @@
   </div>
   </div>
   <script src="./Javascript/aboutMeNameLetters.js"></script>
+  <script src="./Javascript/aboutMeAgeNumbers.js"></script>
+  <script src="./Javascript/aboutMeEducationLetters.js"></script>
  </body>
 </html>
