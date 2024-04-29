@@ -1,3 +1,4 @@
+npx create-react-app .
 git remote add origin Link
 git add .
 git commit -m ""
