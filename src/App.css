@@ -1,6 +1,6 @@
 @import "./aboutMeTab.css";
-/*@import "./skillsTab.css";
-@import "./contactMeTab.css";*/
+@import "./skillsTab.css";
+@import "./contactMeTab.css";
 body {
     background-color: black;
     color: white;

@@ -1,0 +1,68 @@
+@keyframes inV {
+0% {opacity: 0.0;}
+100% {opacity: 1.0;}    
+}
+.headerC {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.mainC {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    height: 100%;
+    justify-items: center;
+}
+.vIMG {
+    width: 40%;
+    height: 100%;
+}
+.mainC2 {
+    display: flex;
+    flex-direction: column;
+}
+.cV {
+    display: flex;
+    flex-direction: row;
+    border-color: white;
+    border-width: 2%;
+    border-style: solid;
+    animation: inV 1s linear;
+    animation-timeline: view();
+}
+.vText {
+    font-size: 100%;
+}
+.headerCPAll {
+    margin: 0 auto;
+}
+.mainC1 {
+    margin: 0 auto;
+}
+.mainC3 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainC3IMG {
+    position: relative;
+    bottom: 23%;
+    width: 100%;
+}
+.mainC3P {
+    position: relative;
+    bottom: 13%;
+}
+@media screen and (max-width: 922px) {
+    .mainC {
+        grid-template-columns: 1fr 1fr;
+    }
+    .mainC3IMG {
+        bottom: 0%;
+    }
+    .mainC3P {
+        bottom: 0%;
+    }
+}
