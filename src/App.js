@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './IMG/MeIMG.jpg'
-import './IMG/diploma.jpg'
-import './IMG/awardDC.png'
-import './IMG/rewardTeaching.jpg'
+import MeIMG from './IMG/MeIMG.jpg'
+import diploma from './IMG/diploma.jpg'
+import awardDC from './IMG/awardDC.png'
+import clickHere from './IMG/clickHere.gif'
+import awardTeaching from './IMG/rewardTeaching.jpg'
 import './App.css';
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
   <main hidden={tab !== 1}>
       <div class="main1"> 
         <section class="mainSection1">
-            <img class="meimg" src="./IMG/MeIMG.jpg" alt='404'></img>
+            <img class="meimg" src={MeIMG} alt='404'></img>
             <div class="Pinfo">
                 <div class="PinfoC1"><p>Name: </p><p class="PinfoC1Space">Lee Cash</p></div>
                 <div class="PinfoC1"><p>Age: </p><p class="PinfoC1Space">19</p></div>
@@ -43,15 +44,15 @@ function App() {
         </section>
         <section class="mainSection2">
             <div>
-                <img class="section2imgs" src="./IMG/diploma.jpg" alt='404'></img>
+                <img class="section2imgs" src={diploma} alt='404'></img>
                 <p class="IMGD"> I've received this diploma as a result of graduating.</p>
             </div>
             <div>
-                <img class="section2imgs" src="./IMG/awardDC.png" alt='404'></img>
+                <img class="section2imgs" src={awardDC} alt='404'></img>
                 <p class="IMGD"> The Teachers at Hixson High School anonymously voted 3 people to receive a reward for self discipline.</p>
             </div>
             <div>
-                <img class="section2imgs" src="./IMG/rewardTeaching.jpg" alt='404'></img>
+                <img class="section2imgs" src={awardTeaching} alt='404'></img>
                 <p class="IMGD">I got the Denise Burt-Turner Special Needs P.E award for taking a small group of special needs students to a classroom and teaching them.</p>
             </div>
         </section>
@@ -75,13 +76,13 @@ function App() {
       </section>
       <section class="mainC2">
         <h1 class="">Skill set</h1>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#7</p></div>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#6</p></div>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#5</p></div>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#4</p></div>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#3</p></div>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#2</p></div>
-        <div class="cV"><img class="vIMG" src="./IMG/clickHere.gif" alt="404"></img><p class="vText">Blog#1</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#7</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#6</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#5</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#4</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#3</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#2</p></div>
+        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#1</p></div>
       </section>
       <section class="mainC3">
         <h1 class="">Skill set</h1>
