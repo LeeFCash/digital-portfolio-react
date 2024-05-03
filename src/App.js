@@ -87,7 +87,7 @@ function App() {
       <section class="mainC3">
         <h1 class="">Skill set</h1>
         <p class="mainC3P">So far the only experience I have is teaching at hixson high school shown by the Denise Burt-Turner Special Needs P.E award also some mentoring at chattanooga state community college for TN promise.</p>
-        <img class="mainC3IMG" src="./IMG/rewardTeaching.jpg" alt="404"></img>
+        <img class="mainC3IMG" src={awardTeaching} alt="404"></img>
       </section>
     </section>
   </main>
