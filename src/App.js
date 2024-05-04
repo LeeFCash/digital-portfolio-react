@@ -20,6 +20,19 @@ function App() {
     setTab(3);
     //tab = 3;
   };
+  var blog1 = document.getElementById(blog1);
+  var blog2 = document.getElementById(blog2);
+  var blog3 = document.getElementById(blog3);
+  var blog4 = document.getElementById(blog4);
+  var blog5 = document.getElementById(blog5);
+  var blog6 = document.getElementById(blog6);
+  var blog7 = document.getElementById(blog7);
+  var blog8 = document.getElementById(blog8);
+  var blogs = [blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8];
+  for (let i = 0; i < blogs.length; i++) {
+    blogs[i].addEventListener('click', function() {
+      window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');
+    });
   return (
     <div>
   <header>
@@ -76,13 +89,14 @@ function App() {
       </section>
       <section class="mainC2">
         <h1 class="">Skill set</h1>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#7</p></div>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#6</p></div>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#5</p></div>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#4</p></div>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#3</p></div>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#2</p></div>
-        <div class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#1</p></div>
+        <div id="blog8" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#8</p></div>
+        <div id="blog7" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#7</p></div>
+        <div id="blog6" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#6</p></div>
+        <div id="blog5" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#5</p></div>
+        <div id="blog4" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#4</p></div>
+        <div id="blog3" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#3</p></div>
+        <div id="blog2" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#2</p></div>
+        <div id="blog1" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#1</p></div>
       </section>
       <section class="mainC3">
         <h1 class="">Skill set</h1>
