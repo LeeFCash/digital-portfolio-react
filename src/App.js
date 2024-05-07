@@ -14,13 +14,34 @@ function App() {
   };
   function tab2() {
     setTab(2);
+    alert('click 2 times on the blogs');
     //tab = 2;
   };
   function tab3() {
     setTab(3);
     //tab = 3;
   };
-  var blog1 = document.getElementById(blog1);
+  function blogs() {
+    /*window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');*/
+    var blog1 = document.getElementById("blog1");
+    blog1.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog2 = document.getElementById("blog2");
+    blog2.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog3 = document.getElementById("blog3");
+    blog3.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog4 = document.getElementById("blog4");
+    blog4.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog5 = document.getElementById("blog5");
+    blog5.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog6 = document.getElementById("blog6");
+    blog6.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog7 = document.getElementById("blog7");
+    blog7.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    var blog8 = document.getElementById("blog8");
+    blog8.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+  };
+  /*blogs();*/
+  /*var blog1 = document.getElementById(blog1);
   var blog2 = document.getElementById(blog2);
   var blog3 = document.getElementById(blog3);
   var blog4 = document.getElementById(blog4);
@@ -32,14 +53,14 @@ function App() {
   for (let i = 0; i < blogs.length; i++) {
     blogs[i].addEventListener('click', function() {
       window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');
-    });
+    });*/
   return (
     <div>
   <header>
     <nav><ul>
-      <li><button onClick={tab1}>About me</button></li>
-      <li><button onClick={tab2}>skills</button></li>
-      <li><button onClick={tab3}>contact me</button></li>
+      <li><button type="button" onClick={tab1}>About me</button></li>
+      <li><button type="button" onClick={tab2}>skills</button></li>
+      <li><button type="button" onClick={tab3}>contact me</button></li>
     </ul></nav>
   </header>
   <main hidden={tab !== 0}>
@@ -89,14 +110,14 @@ function App() {
       </section>
       <section class="mainC2">
         <h1 class="">Skill set</h1>
-        <div id="blog8" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#8</p></div>
-        <div id="blog7" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#7</p></div>
-        <div id="blog6" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#6</p></div>
-        <div id="blog5" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#5</p></div>
-        <div id="blog4" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#4</p></div>
-        <div id="blog3" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#3</p></div>
-        <div id="blog2" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#2</p></div>
-        <div id="blog1" class="cV"><img class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#1</p></div>
+        <div onClick={blogs} id="blog8" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#8</p></div>
+        <div onClick={blogs} id="blog7" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#7</p></div>
+        <div onClick={blogs} id="blog6" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#6</p></div>
+        <div onClick={blogs} id="blog5" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#5</p></div>
+        <div onClick={blogs} id="blog4" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#4</p></div>
+        <div onClick={blogs} id="blog3" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#3</p></div>
+        <div onClick={blogs} id="blog2" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#2</p></div>
+        <div onClick={blogs} id="blog1" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#1</p></div>
       </section>
       <section class="mainC3">
         <h1 class="">Skill set</h1>
