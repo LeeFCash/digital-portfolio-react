@@ -2,7 +2,7 @@
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 40%;
+    width: 100%;
     height: 20%;
 }
 .meimg {
@@ -11,25 +11,36 @@
 }
 .mainSection2 {
     padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
-    height: 20%;
-    position: relative;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
 }
 .section2imgs {
     width: 100%;
+    height: 100%;
 }
-.tab1imgs {
-    padding: 5%;
+.tab1imgsC {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    /*padding: 5%;*/
 }
-.main1 {
+.tab1imgsC3{
+    width: 100%;
+}
+.main1 {/*
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 .Pinfo {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
 }
 .PinfoC1 {
     display: flex;
@@ -38,6 +49,7 @@
 }
 .PinfoC1Space {
     margin-left: 3%;
+    width: 100%;
 }
 @media screen and (max-width: 1051px) {
     .PinfoC1 {

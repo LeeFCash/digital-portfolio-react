@@ -72,21 +72,21 @@ function App() {
         <section className="mainSection1">
             <img className="meimg" src={MeIMG} alt='404'></img>
             <div className="Pinfo">
-                <div className="PinfoC1"><p>Name: </p><p class="PinfoC1Space">Lee Cash</p></div>
-                <div className="PinfoC1"><p>Age: </p><p class="PinfoC1Space">19</p></div>
-                <div className="PinfoC1"><p>Education: </p><p class="PinfoC1Space"> High school Diploma</p></div>
+                <div className="PinfoC1"><p>Name: </p><p className="PinfoC1Space">Lee Cash</p></div>
+                <div className="PinfoC1"><p>Age: </p><p className="PinfoC1Space">19</p></div>
+                <div className="PinfoC1"><p>Education: </p><p className="PinfoC1Space"> High school Diploma</p></div>
             </div>
         </section>
         <section className="mainSection2">
-            <div className='tab1imgs'>
+            <div className='tab1imgsC'>
                 <img className="section2imgs" src={diploma} alt='404'></img>
                 <p className="IMGD"> I've received this diploma as a result of graduating.</p>
             </div>
-            <div className='tab1imgs'>
+            <div className='tab1imgsC'>
                 <img className="section2imgs" src={awardDC} alt='404'></img>
                 <p className="IMGD"> The Teachers at Hixson High School anonymously voted 3 people to receive a reward for self discipline.</p>
             </div>
-            <div className='tab1imgs'>
+            <div className='tab1imgsC tab1imgsC3'>
                 <img className="section2imgs" src={awardTeaching} alt='404'></img>
                 <p className="IMGD">I got the Denise Burt-Turner Special Needs P.E award for taking a small group of special needs students to a classroom and teaching them.</p>
             </div>
@@ -96,7 +96,7 @@ function App() {
   <main hidden={tab !== 2}>
     <section className="mainC">
       <section className="mainC1">
-        <h1 className="">Skill set</h1>
+        <h1 className="mainCTitles">Skill set</h1>
         <ul>
           <li>JavaScript</li>
           <li>HTML</li>
@@ -121,7 +121,7 @@ function App() {
         <div onMouseOver={blogs} id="blog1" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#1</p></div>
       </section>
       <section className="mainC3">
-        <h1 className="">proof</h1>
+        <h1 className="mainCTitles">proof</h1>
         <p className="mainC3P">So far the only experience I have is teaching at hixson high school shown by the Denise Burt-Turner Special Needs P.E award also some mentoring at chattanooga state community college for TN promise.</p>
         <img className="mainC3IMG" src={awardTeaching} alt="404"></img>
       </section>

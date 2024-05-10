@@ -61,16 +61,19 @@ width: 100%;
     bottom: 13%;
 }*/
 .mainCTitles {
-    /*align-self: center;*/
+    text-align: center;
 }
 @media screen and (max-width: 922px) {
     .mainC {
         grid-template-columns: 1fr 1fr;
     }
-    .mainC3IMG {
-        bottom: 0%;
+    .mainC3 {
+        width: 100%;
     }
-    .mainC3P {
-        bottom: 0%;
+    .mainC {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
     }
 }
