@@ -20,6 +20,9 @@
 .section2imgs {
     width: 100%;
 }
+.tab1imgs {
+    padding: 5%;
+}
 .main1 {
     display: flex;
     flex-wrap: wrap;

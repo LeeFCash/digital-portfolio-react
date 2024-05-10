@@ -8,37 +8,38 @@ import './App.css';
 
 function App() {
   const [tab, setTab] = useState(0);
+  const [check, setCheck] = useState(0);
   function tab1() {
     setTab(1);
-    //tab = 1;
   };
   function tab2() {
     setTab(2);
-    alert('click 2 times on the blogs');
-    //tab = 2;
   };
   function tab3() {
     setTab(3);
-    //tab = 3;
   };
   function blogs() {
     /*window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');*/
     var blog1 = document.getElementById("blog1");
-    blog1.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog1.addEventListener("click", function(){window.open('https://youtu.be/r-h2IPPMpBo?si=ve_G_GOLVm1CXINw');});
     var blog2 = document.getElementById("blog2");
-    blog2.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog2.addEventListener("click", function(){window.open('https://youtu.be/bSdCY3ay8Qk?si=qaWul1NhYZoThcEC');});
     var blog3 = document.getElementById("blog3");
-    blog3.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog3.addEventListener("click", function(){window.open('https://youtu.be/_WRFMGZHrGs?si=pbDky5_15M7e_-zZ');});
     var blog4 = document.getElementById("blog4");
-    blog4.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog4.addEventListener("click", function(){window.open('https://youtu.be/ryfU13Vkmls?si=NZ-43wWE_-l__Buk');});
     var blog5 = document.getElementById("blog5");
-    blog5.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog5.addEventListener("click", function(){window.open('https://youtu.be/s7Ih4r3CFsE?si=4pxEeuve15IUIEXJ');});
     var blog6 = document.getElementById("blog6");
-    blog6.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog6.addEventListener("click", function(){window.open('https://youtu.be/L2SW84Q7L2I?si=4H3hfV1qTwPzlEmi');});
     var blog7 = document.getElementById("blog7");
     blog7.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
     var blog8 = document.getElementById("blog8");
-    blog8.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
+    blog8.addEventListener("click", function(){window.open('https://youtu.be/gG2aYsNgx88?si=PaKMnsNRQQ3qHG8f');});
+    /*if(check === 0){
+      alert('click 2 times on the blogs');
+      setCheck(1);
+      }*/
   };
   /*blogs();*/
   /*var blog1 = document.getElementById(blog1);
@@ -64,38 +65,38 @@ function App() {
     </ul></nav>
   </header>
   <main hidden={tab !== 0}>
-    <p class="beforeTabinfo">Hello, my name is Lee Cash, and you can get to know me better by clicking any of the 3 tabs at the top.</p>
+    <p className="beforeTabinfo">Hello, my name is Lee Cash, and you can get to know me better by clicking any of the 3 tabs at the top.</p>
   </main>
   <main hidden={tab !== 1}>
-      <div class="main1"> 
-        <section class="mainSection1">
-            <img class="meimg" src={MeIMG} alt='404'></img>
-            <div class="Pinfo">
-                <div class="PinfoC1"><p>Name: </p><p class="PinfoC1Space">Lee Cash</p></div>
-                <div class="PinfoC1"><p>Age: </p><p class="PinfoC1Space">19</p></div>
-                <div class="PinfoC1"><p>Education: </p><p class="PinfoC1Space"> High school Diploma</p></div>
+      <div className="main1"> 
+        <section className="mainSection1">
+            <img className="meimg" src={MeIMG} alt='404'></img>
+            <div className="Pinfo">
+                <div className="PinfoC1"><p>Name: </p><p class="PinfoC1Space">Lee Cash</p></div>
+                <div className="PinfoC1"><p>Age: </p><p class="PinfoC1Space">19</p></div>
+                <div className="PinfoC1"><p>Education: </p><p class="PinfoC1Space"> High school Diploma</p></div>
             </div>
         </section>
-        <section class="mainSection2">
-            <div>
-                <img class="section2imgs" src={diploma} alt='404'></img>
-                <p class="IMGD"> I've received this diploma as a result of graduating.</p>
+        <section className="mainSection2">
+            <div className='tab1imgs'>
+                <img className="section2imgs" src={diploma} alt='404'></img>
+                <p className="IMGD"> I've received this diploma as a result of graduating.</p>
             </div>
-            <div>
-                <img class="section2imgs" src={awardDC} alt='404'></img>
-                <p class="IMGD"> The Teachers at Hixson High School anonymously voted 3 people to receive a reward for self discipline.</p>
+            <div className='tab1imgs'>
+                <img className="section2imgs" src={awardDC} alt='404'></img>
+                <p className="IMGD"> The Teachers at Hixson High School anonymously voted 3 people to receive a reward for self discipline.</p>
             </div>
-            <div>
-                <img class="section2imgs" src={awardTeaching} alt='404'></img>
-                <p class="IMGD">I got the Denise Burt-Turner Special Needs P.E award for taking a small group of special needs students to a classroom and teaching them.</p>
+            <div className='tab1imgs'>
+                <img className="section2imgs" src={awardTeaching} alt='404'></img>
+                <p className="IMGD">I got the Denise Burt-Turner Special Needs P.E award for taking a small group of special needs students to a classroom and teaching them.</p>
             </div>
         </section>
       </div>
   </main>
   <main hidden={tab !== 2}>
-    <section class="mainC">
-      <section class="mainC1">
-        <h1 class="">Skill set</h1>
+    <section className="mainC">
+      <section className="mainC1">
+        <h1 className="">Skill set</h1>
         <ul>
           <li>JavaScript</li>
           <li>HTML</li>
@@ -108,35 +109,35 @@ function App() {
           <li><a href="https://youtube.com/playlist?list=PL7vr_kFNXDB7JnTKGR6ZX_kqQGjUqeBQ7&si=XAfIlmkHPb5N08BR" target="_blank" rel="noopener noreferrer"> Click this to see my updated blog</a></li>
         </ul>
       </section>
-      <section class="mainC2">
-        <h1 class="">Skill set</h1>
-        <div onClick={blogs} id="blog8" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#8</p></div>
-        <div onClick={blogs} id="blog7" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#7</p></div>
-        <div onClick={blogs} id="blog6" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#6</p></div>
-        <div onClick={blogs} id="blog5" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#5</p></div>
-        <div onClick={blogs} id="blog4" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#4</p></div>
-        <div onClick={blogs} id="blog3" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#3</p></div>
-        <div onClick={blogs} id="blog2" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#2</p></div>
-        <div onClick={blogs} id="blog1" class="cV"><img onClick={blogs} class="vIMG" src={clickHere} alt="404"></img><p class="vText">Blog#1</p></div>
+      <section className="mainC2">
+        <h1 className="mainCTitles">blogs</h1>
+        <div onMouseOver={blogs} id="blog8" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#8</p></div>
+        <div onMouseOver={blogs} id="blog7" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#7</p></div>
+        <div onMouseOver={blogs} id="blog6" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#6</p></div>
+        <div onMouseOver={blogs} id="blog5" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#5</p></div>
+        <div onMouseOver={blogs} id="blog4" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#4</p></div>
+        <div onMouseOver={blogs} id="blog3" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#3</p></div>
+        <div onMouseOver={blogs} id="blog2" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#2</p></div>
+        <div onMouseOver={blogs} id="blog1" className="cV"><img className="vIMG" src={clickHere} alt="404"></img><p className="vText">Blog#1</p></div>
       </section>
-      <section class="mainC3">
-        <h1 class="">Skill set</h1>
-        <p class="mainC3P">So far the only experience I have is teaching at hixson high school shown by the Denise Burt-Turner Special Needs P.E award also some mentoring at chattanooga state community college for TN promise.</p>
-        <img class="mainC3IMG" src={awardTeaching} alt="404"></img>
+      <section className="mainC3">
+        <h1 className="">proof</h1>
+        <p className="mainC3P">So far the only experience I have is teaching at hixson high school shown by the Denise Burt-Turner Special Needs P.E award also some mentoring at chattanooga state community college for TN promise.</p>
+        <img className="mainC3IMG" src={awardTeaching} alt="404"></img>
       </section>
     </section>
   </main>
   <main hidden={tab !== 3}>
-    <div  class="contactMeMain">
-    <p class="beforeTabinfo">If you're interested here's how to contact me and some information.</p>
-    <section class="ResumeSection">
-      <div class="ResumeSectionContactInfo">
-        <p class="ResumeSectionContactInfoC">Lee F. Cash</p>
-        <p class="ResumeSectionContactInfoC">leecash133@gmail.com</p>
-        <p class="ResumeSectionContactInfoC">+1 762 222-3156</p>
+    <div  className="contactMeMain">
+    <p className="beforeTabinfo">If you're interested here's how to contact me and some information.</p>
+    <section className="ResumeSection">
+      <div className="ResumeSectionContactInfo">
+        <p className="ResumeSectionContactInfoC">Lee F. Cash</p>
+        <p className="ResumeSectionContactInfoC">leecash133@gmail.com</p>
+        <p className="ResumeSectionContactInfoC">+1 762 222-3156</p>
       </div>
       <h1>Profile - </h1>
-      <p class="profileInfo">Highly motivated and creative college student dedicated to obtaining a degree in Web Design. Proficient in HTML, CSS, and JavaScript, with a commitment to staying abreast of industry trends and emerging technologies. Currently developing skills in Node.js and React JS. Seeking an opportunity to collaborate with cross-functional teams, eager to apply skills and contribute to innovative web design projects. Excited to bring technical skills and design sensibilities to a challenging and rewarding role in web design.</p>
+      <p className="profileInfo">Highly motivated and creative college student dedicated to obtaining a degree in Web Design. Proficient in HTML, CSS, and JavaScript, with a commitment to staying abreast of industry trends and emerging technologies. Currently developing skills in Node.js and React JS. Seeking an opportunity to collaborate with cross-functional teams, eager to apply skills and contribute to innovative web design projects. Excited to bring technical skills and design sensibilities to a challenging and rewarding role in web design.</p>
     </section>
     </div>
   </main>
