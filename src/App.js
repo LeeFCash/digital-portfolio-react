@@ -87,7 +87,7 @@ function App() {
                 <p className="IMGD"> The Teachers at Hixson High School anonymously voted 3 people to receive a reward for self discipline.</p>
             </div>
             <div className='tab1imgsC tab1imgsC3'>
-                <img className="section2imgs" src={awardTeaching} alt='404'></img>
+                <img className="section2imgs section2imgs2" src={awardTeaching} alt='404'></img>
                 <p className="IMGD">I got the Denise Burt-Turner Special Needs P.E award for taking a small group of special needs students to a classroom and teaching them.</p>
             </div>
         </section>

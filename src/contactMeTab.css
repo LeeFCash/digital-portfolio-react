@@ -22,8 +22,13 @@
 .profileInfo {
     width: 50%;
 }
-@media screen and (max-width: 358px) {
+.beforeTabinfo {
+    text-align: center;
+}
+@media screen and (max-width: 300px) {
     .profileInfo {
-        font-size: 80%;
+        font-size: 75%;
+        font-style: normal;
+        font-weight: 100%;
     }
 }
