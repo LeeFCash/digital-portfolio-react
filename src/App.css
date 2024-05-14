@@ -7,9 +7,10 @@ body {
 }
 header nav {
     display: block;
-    border-color: white;
     border-style: solid;
-    border-width: 1%;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 40px;
 }
 header nav ul {
     display: flex;
@@ -21,12 +22,42 @@ header nav ul li {
     margin: 0 auto;
 }
 header nav ul li button {
-    border-radius: 50px;
-    /*border-width: 50px;*/
+    /*border-radius: 50px;
     border-color: blue;
+    font-size: 20px;
+    align-self: center;*/
+    border-radius: 50px;
+    border-color: white;
+    background-color: black;
+    color: white;
     font-size: 20px;
     align-self: center;
 }
 .beforeTabinfo {
     font-size: 100%;
+}
+.tab0Split {
+    display: grid;
+    grid-template-columns: 30 1fr;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+}
+.helpText1 {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.tab0SplitD {
+    width: 30%;
+    /*height: 50%;*/
+}
+.tab0SplitD2 {
+    width: 50%;
+}
+.tab0SplitDImg {
+    height: 100%;
+}
+.main0 {
+    /*height: 20%;*/
 }

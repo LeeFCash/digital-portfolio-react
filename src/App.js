@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import MeIMG from './IMG/MeIMG.jpg'
-import diploma from './IMG/diploma.jpg'
-import awardDC from './IMG/awardDC.png'
-import clickHere from './IMG/clickHere.gif'
-import awardTeaching from './IMG/rewardTeaching.jpg'
+import MeIMG from './IMG/MeIMG.jpg';
+import diploma from './IMG/diploma.jpg';
+import awardDC from './IMG/awardDC.png';
+import clickHere from './IMG/clickHere.gif';
+import awardTeaching from './IMG/rewardTeaching.jpg';
+import meG from './IMG/meG.jpg';
 import './App.css';
-
 function App() {
   const [tab, setTab] = useState(0);
   const [check, setCheck] = useState(0);
@@ -19,7 +19,6 @@ function App() {
     setTab(3);
   };
   function blogs() {
-    /*window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');*/
     var blog1 = document.getElementById("blog1");
     blog1.addEventListener("click", function(){window.open('https://youtu.be/r-h2IPPMpBo?si=ve_G_GOLVm1CXINw');});
     var blog2 = document.getElementById("blog2");
@@ -36,25 +35,7 @@ function App() {
     blog7.addEventListener("click", function(){window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');});
     var blog8 = document.getElementById("blog8");
     blog8.addEventListener("click", function(){window.open('https://youtu.be/gG2aYsNgx88?si=PaKMnsNRQQ3qHG8f');});
-    /*if(check === 0){
-      alert('click 2 times on the blogs');
-      setCheck(1);
-      }*/
   };
-  /*blogs();*/
-  /*var blog1 = document.getElementById(blog1);
-  var blog2 = document.getElementById(blog2);
-  var blog3 = document.getElementById(blog3);
-  var blog4 = document.getElementById(blog4);
-  var blog5 = document.getElementById(blog5);
-  var blog6 = document.getElementById(blog6);
-  var blog7 = document.getElementById(blog7);
-  var blog8 = document.getElementById(blog8);
-  var blogs = [blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8];
-  for (let i = 0; i < blogs.length; i++) {
-    blogs[i].addEventListener('click', function() {
-      window.open('https://youtu.be/H8eIcx-YAtE?si=BrL7t0uukwtAA6PR');
-    });*/
   return (
     <div>
   <header>
@@ -65,7 +46,19 @@ function App() {
     </ul></nav>
   </header>
   <main hidden={tab !== 0}>
+    <div className='main0'>
     <p className="beforeTabinfo">Hello, my name is Lee Cash, and you can get to know me better by clicking any of the 3 tabs at the top.</p>
+    <section>
+      <div className='tab0Split'>
+        <div className='tab0SplitD'>
+          <img className='tab0SplitDImg' src={meG} alt='404'></img>
+        </div>
+        <div className='tab0SplitD2'>
+          <textarea className='helpText1'>Type "help" to get a list of things to do or see</textarea>
+        </div>
+      </div>
+    </section>
+    </div>
   </main>
   <main hidden={tab !== 1}>
       <div className="main1"> 
