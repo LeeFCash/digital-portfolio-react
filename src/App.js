@@ -9,6 +9,33 @@ import './App.css';
 function App() {
   const [tab, setTab] = useState(0);
   const [check, setCheck] = useState(0);
+  function terminal(e) {
+    var terminalType = document.getElementById('terminalType');
+    var terminalStuff = document.getElementById('terminalStuff');
+    var homePath = true;
+    if(e.key === "Enter"){
+      switch(true) {
+        case terminalType.value === "help":
+          var helpCOutput = document.createElement('p');
+          helpCOutput.innerHTML = 'type \"clear\" to clear the terminal screen.<br>type \"whoareyou\" to get info about Lee Cash.<br>type \"pwd\" to know where you are in the file system.<br>type \"ls\" to know what is in the directory you are located in.<br>type \"cd \'name of dir or ~ to return to home dir\'\" to go into a directory.<br>type \"cat \'name of dir\'\" to get info about Lee Cash.<br>type \"Xdg-open \'fileName\'\" to open a IMG in the terminal.';
+          terminalStuff.appendChild(helpCOutput);
+          terminalType.value = "";
+          break;
+          case terminalType.value === "clear":
+            terminalStuff.innerHTML = "";
+            terminalType.value = "";
+            break;
+          case terminalType.value === "ls":
+            if(homePath == true){
+              var lsOutPut = document.createElement('p');
+              lsOutPut.innerHTML = 'about.txt<br>skills.txt<br>contactMe.txt<br>IMGs';
+              terminalStuff.appendChild(lsOutPut);
+            }
+            terminalType.value = "";
+            break;
+      }
+    }
+  }
   function tab1() {
     setTab(1);
   };
@@ -54,7 +81,16 @@ function App() {
           <img className='tab0SplitDImg' src={meG} alt='404'></img>
         </div>
         <div className='tab0SplitD2'>
-          <textarea className='helpText1'>Type "help" to get a list of things to do or see</textarea>
+          <div id='terminalStuff'><p><pre>
+            Type "help" to get a list of things to do or see in the box below.<br></br>
+             ____  _______ _______       _____       ____         ______    _      _ <br></br>
+            |  |   | ____| | ____|      | ___|      / /\ \       |  ____|  | |    | |<br></br>
+            |  |   | |___  | |___       | |        / /__\ \      | |____   | |____| |<br></br>
+            |  |   |  ___| |  ___|      | |       / /____\ \     |_____ |  | _____  |<br></br>
+            |  |__ | |___  | |___       | |__    / /      \ \     ____| |  | |    | |<br></br>
+            |_____||_____| |_____|      |____|  /_/        \_\   |______|  |_|    |_|<br></br>
+            </pre></p></div>
+          <input id='terminalType' className='helpText1' onKeyDown={terminal}></input>
         </div>
       </div>
     </section>

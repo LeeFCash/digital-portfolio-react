@@ -38,7 +38,7 @@ header nav ul li button {
 }
 .tab0Split {
     display: grid;
-    grid-template-columns: 30 1fr;
+    grid-template-columns: 17% 1fr;
     /*display: flex;
     flex-direction: row;
     flex-wrap: wrap;*/
@@ -47,17 +47,26 @@ header nav ul li button {
     background-color: black;
     color: white;
     width: 100%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: white;
+    height: 3%;
+    font-size: 100%;
 }
 .tab0SplitD {
-    width: 30%;
-    /*height: 50%;*/
+    /*width: 30%;
+    height: 50%;*/
+    width: 100%;
+    height: 60%;
 }
 .tab0SplitD2 {
-    width: 50%;
+    /*width: 50%;*/
+    width: 99%;
+    height: 100%;
 }
 .tab0SplitDImg {
     height: 100%;
 }
 .main0 {
-    /*height: 20%;*/
+    height: 100%;
 }
