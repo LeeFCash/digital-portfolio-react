@@ -13,11 +13,19 @@ function App() {
     var terminalType = document.getElementById('terminalType');
     var terminalStuff = document.getElementById('terminalStuff');
     var homePath = true;
+    var aboutPath = false;
+    var skillsPath = false;
+    var contactMePath = false;
+    var IMGsPath = false;
+    
+    /*var inputQ = document.querySelector(#terminalType);
+    console.log(inputQ)
+    terminalType.onload = function(e) {*/
     if(e.key === "Enter"){
       switch(true) {
         case terminalType.value === "help":
           var helpCOutput = document.createElement('p');
-          helpCOutput.innerHTML = 'type \"clear\" to clear the terminal screen.<br>type \"whoareyou\" to get info about Lee Cash.<br>type \"pwd\" to know where you are in the file system.<br>type \"ls\" to know what is in the directory you are located in.<br>type \"cd \'name of dir or ~ to return to home dir\'\" to go into a directory.<br>type \"cat \'name of dir\'\" to get info about Lee Cash.<br>type \"Xdg-open \'fileName\'\" to open a IMG in the terminal.';
+          helpCOutput.innerHTML = 'type \"clear\" to clear the terminal screen.<br>type \"whoareyou\" to get info about Lee Cash.<br>type \"pwd\" to know where you are in the file system.<br>type \"ls\" to know what is in the directory you are located in.<br>type \"cd \'name of dir or ~ to return to home dir\'\" to go into a directory.<br>type \"cat \'name of dir\'\" to get info about Lee Cash.<br>type \"Xdg-open \'fileName\'\" to open a IMG in the terminal.<br>commands are cap sensitive';
           terminalStuff.appendChild(helpCOutput);
           terminalType.value = "";
           break;
@@ -26,16 +34,94 @@ function App() {
             terminalType.value = "";
             break;
           case terminalType.value === "ls":
-            if(homePath == true){
+            if(homePath === true){
               var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'about.txt<br>skills.txt<br>contactMe.txt<br>IMGs';
+              lsOutPut.innerHTML = 'about<br>skills<br>contactMe<br>IMGs';
               terminalStuff.appendChild(lsOutPut);
             }
+            if(aboutPath === true){
+              var lsOutPut = document.createElement('p');
+              lsOutPut.innerHTML = 'age.txt<br>name.txt<br>education.txt';
+              terminalStuff.appendChild(lsOutPut);
+            }
+            if(skillsPath === true){
+              var lsOutPut = document.createElement('p');
+              lsOutPut.innerHTML = 'javaScript.txt<br>html.txt<br>css.txt<br>BlogsVideos';
+              terminalStuff.appendChild(lsOutPut);
+            }
+            if(contactMePath === true){
+              var lsOutPut = document.createElement('p');
+              lsOutPut.innerHTML = 'email.txt<br>phone#.txt';
+              terminalStuff.appendChild(lsOutPut);
+            }
+            if(IMGsPath === true){
+              var lsOutPut = document.createElement('p');
+              lsOutPut.innerHTML = 'teachingAward.jpg<br>discipline.png<br>diploma.jpg';
+              terminalStuff.appendChild(lsOutPut);
+              alert('two');
+            }
+            alert(IMGsPath);
             terminalType.value = "";
             break;
+            case terminalType.value === "cd about":
+              if(homePath === true && terminalType.value === "cd about"){
+                var homePath = false;
+                var aboutPath = true;
+                var skillsPath = false;
+                var contactMePath = false;
+                var IMGsPath = false;
+                terminalType.value = "";
+              }
+              break;
+            case terminalType.value === "cd skils":
+                if(homePath === true && terminalType.value === "cd skils"){
+                  var homePath = false;
+                  var aboutPath = false;
+                  var skillsPath = true;
+                  var contactMePath = false;
+                  var IMGsPath = false;
+                  terminalType.value = "";
+                }
+                break;
+              case terminalType.value === "cd contactMe":
+                if(homePath === true && terminalType.value === "cd contactMe"){
+                  var homePath = false;
+                  var aboutPath = false;
+                  var skillsPath = false;
+                  var contactMePath = true;
+                  var IMGsPath = false;
+                  terminalType.value = "";
+                }
+                  break;
+                case terminalType.value === "cd IMGs":
+                  if(homePath === true && terminalType.value === "cd IMGs"){
+                    var homePath = false;
+                    var aboutPath = false;
+                    var skillsPath = false;
+                    var contactMePath = false;
+                    var IMGsPath = true;
+                    terminalType.value = "";
+                    alert(IMGsPath);
+                  }
+                    break;
+                case terminalType.value === "cd ~":
+                  var homePath = true;
+                  var aboutPath = false;
+                  var skillsPath = false;
+                  var contactMePath = false;
+                  var IMGsPath = false;
+                  terminalType.value = "";
+                  break;
+          default:
+            var defaultOutPut = document.createElement('p');
+            defaultOutPut.innerHTML = 'Unkown command try \"help\" command';
+            terminalStuff.appendChild(defaultOutPut);
+            terminalType.value = "";
       }
     }
   }
+  //terminal();
+
   function tab1() {
     setTab(1);
   };
@@ -83,7 +169,7 @@ function App() {
         <div className='tab0SplitD2'>
           <div id='terminalStuff'><p><pre>
             Type "help" to get a list of things to do or see in the box below.<br></br>
-             ____  _______ _______       _____       ____         ______    _      _ <br></br>
+            _________________________________________________________________________ <br></br>
             |  |   | ____| | ____|      | ___|      / /\ \       |  ____|  | |    | |<br></br>
             |  |   | |___  | |___       | |        / /__\ \      | |____   | |____| |<br></br>
             |  |   |  ___| |  ___|      | |       / /____\ \     |_____ |  | _____  |<br></br>
