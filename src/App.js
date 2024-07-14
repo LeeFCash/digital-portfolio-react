@@ -9,15 +9,16 @@ import './App.css';
 function App() {
   const [tab, setTab] = useState(0);
   const [check, setCheck] = useState(0);
-  function terminal(e) {
-    var terminalType = document.getElementById('terminalType');
-    var terminalStuff = document.getElementById('terminalStuff');
+  // for function terminal start 
     var homePath = true;
     var aboutPath = false;
     var skillsPath = false;
     var contactMePath = false;
     var IMGsPath = false;
-    
+  //end 
+  function terminal(e) {
+    var terminalType = document.getElementById('terminalType');
+    var terminalStuff = document.getElementById('terminalStuff');
     /*var inputQ = document.querySelector(#terminalType);
     console.log(inputQ)
     terminalType.onload = function(e) {*/
@@ -58,60 +59,81 @@ function App() {
               var lsOutPut = document.createElement('p');
               lsOutPut.innerHTML = 'teachingAward.jpg<br>discipline.png<br>diploma.jpg';
               terminalStuff.appendChild(lsOutPut);
-              alert('two');
             }
-            alert(IMGsPath);
             terminalType.value = "";
             break;
             case terminalType.value === "cd about":
               if(homePath === true && terminalType.value === "cd about"){
-                var homePath = false;
-                var aboutPath = true;
-                var skillsPath = false;
-                var contactMePath = false;
-                var IMGsPath = false;
+                homePath = false;
+                aboutPath = true;
+                skillsPath = false;
+                contactMePath = false;
+                IMGsPath = false;
                 terminalType.value = "";
               }
               break;
             case terminalType.value === "cd skils":
                 if(homePath === true && terminalType.value === "cd skils"){
-                  var homePath = false;
-                  var aboutPath = false;
-                  var skillsPath = true;
-                  var contactMePath = false;
-                  var IMGsPath = false;
+                  homePath = false;
+                  aboutPath = false;
+                  skillsPath = true;
+                  contactMePath = false;
+                  IMGsPath = false;
                   terminalType.value = "";
                 }
                 break;
               case terminalType.value === "cd contactMe":
                 if(homePath === true && terminalType.value === "cd contactMe"){
-                  var homePath = false;
-                  var aboutPath = false;
-                  var skillsPath = false;
-                  var contactMePath = true;
-                  var IMGsPath = false;
+                  homePath = false;
+                  aboutPath = false;
+                  skillsPath = false;
+                  contactMePath = true;
+                  IMGsPath = false;
                   terminalType.value = "";
                 }
                   break;
                 case terminalType.value === "cd IMGs":
                   if(homePath === true && terminalType.value === "cd IMGs"){
-                    var homePath = false;
-                    var aboutPath = false;
-                    var skillsPath = false;
-                    var contactMePath = false;
-                    var IMGsPath = true;
+                    homePath = false;
+                    aboutPath = false;
+                    skillsPath = false;
+                    contactMePath = false;
+                    IMGsPath = true;
                     terminalType.value = "";
-                    alert(IMGsPath);
                   }
                     break;
                 case terminalType.value === "cd ~":
-                  var homePath = true;
-                  var aboutPath = false;
-                  var skillsPath = false;
-                  var contactMePath = false;
-                  var IMGsPath = false;
+                  homePath = true;
+                  aboutPath = false;
+                  skillsPath = false;
+                  contactMePath = false;
+                  IMGsPath = false;
                   terminalType.value = "";
                   break;
+              case terminalType.value === "Xdg-open teachingAward.jpg":
+                if(IMGsPath === true){
+                  var XdgOpenOutPut = document.createElement('div');
+                  //XdgOpenOutPut.src = {awardTeaching};
+                  //XdgOpenOutPut.innerHTML = '<img src="./IMG/awardDC.png"></img>';
+                  XdgOpenOutPut.innerHTML = '<img src=' + {awardTeaching} + '></img>';
+                  //XdgOpenOutPut.src = './IMG/awardDC.png';
+                  terminalStuff.appendChild(XdgOpenOutPut);
+                }
+                break;
+              case terminalType.value === "Xdg-open discipline.png":
+                if(IMGsPath === true){
+                  var XdgOpenOutPut = document.createElement('img');
+                  XdgOpenOutPut.src = {awardDC};
+                  terminalStuff.appendChild(XdgOpenOutPut);
+                }
+                break;
+              case terminalType.value === "Xdg-open diploma.jpg":
+                if(IMGsPath === true){
+                  var XdgOpenOutPut = document.createElement('img');
+                  XdgOpenOutPut.src = {diploma};
+                  terminalStuff.appendChild(XdgOpenOutPut);
+                }
+                break;
           default:
             var defaultOutPut = document.createElement('p');
             defaultOutPut.innerHTML = 'Unkown command try \"help\" command';
