@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/digital-portfolio-react/static/css/main.a9799f22.css",
-    "main.js": "/digital-portfolio-react/static/js/main.27159959.js",
+    "main.css": "/digital-portfolio-react/static/css/main.9f8351af.css",
+    "main.js": "/digital-portfolio-react/static/js/main.44253676.js",
     "static/js/453.dc298bb9.chunk.js": "/digital-portfolio-react/static/js/453.dc298bb9.chunk.js",
     "static/media/diploma.jpg": "/digital-portfolio-react/static/media/diploma.8691ee28aadc2bed92bc.jpg",
     "static/media/rewardTeaching.jpg": "/digital-portfolio-react/static/media/rewardTeaching.a0c3872beaa3ddfe7beb.jpg",
     "static/media/MeIMG.jpg": "/digital-portfolio-react/static/media/MeIMG.cd13aa6c7cfa735eb235.jpg",
     "static/media/awardDC.png": "/digital-portfolio-react/static/media/awardDC.8def8fc01277d6bee0c1.png",
+    "static/media/meG.jpg": "/digital-portfolio-react/static/media/meG.d43332df85f1b10b60a1.jpg",
     "static/media/clickHere.gif": "/digital-portfolio-react/static/media/clickHere.af0e05e5e4070abf3b11.gif",
     "index.html": "/digital-portfolio-react/index.html",
-    "main.a9799f22.css.map": "/digital-portfolio-react/static/css/main.a9799f22.css.map",
-    "main.27159959.js.map": "/digital-portfolio-react/static/js/main.27159959.js.map",
+    "main.9f8351af.css.map": "/digital-portfolio-react/static/css/main.9f8351af.css.map",
+    "main.44253676.js.map": "/digital-portfolio-react/static/js/main.44253676.js.map",
     "453.dc298bb9.chunk.js.map": "/digital-portfolio-react/static/js/453.dc298bb9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9799f22.css",
-    "static/js/main.27159959.js"
+    "static/css/main.9f8351af.css",
+    "static/js/main.44253676.js"
   ]
 }
