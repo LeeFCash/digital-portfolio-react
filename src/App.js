@@ -112,10 +112,15 @@ function App() {
                   break;
               case terminalType.value === "Xdg-open teachingAward.jpg":
                 if(IMGsPath === true){
-                  var XdgOpenOutPut = document.createElement('div');
+                  var XdgOpenOutPut = document.createElement('img');
                   //XdgOpenOutPut.src = {awardTeaching};
+                  XdgOpenOutPut.src = require('./IMG/rewardTeaching.jpg');
+                  var terminalImg = 'terminalImg';
+                  xXdgOpenOutPut.classList.add(terminalImg);
+                  //xXdgOpenOutPut.className = {terminalImg};
                   //XdgOpenOutPut.innerHTML = '<img src="./IMG/awardDC.png"></img>';
-                  XdgOpenOutPut.innerHTML = '<img src=' + {awardTeaching} + '></img>';
+                  //XdgOpenOutPut.innerHTML = '<img src={awardTeaching} alt="My Image"></img>';
+                  //XdgOpenOutPut.style.backgroundImage = {awardTeaching};
                   //XdgOpenOutPut.src = './IMG/awardDC.png';
                   terminalStuff.appendChild(XdgOpenOutPut);
                 }
