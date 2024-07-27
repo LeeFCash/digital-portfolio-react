@@ -113,29 +113,21 @@ function App() {
               case terminalType.value === "Xdg-open teachingAward.jpg":
                 if(IMGsPath === true){
                   var XdgOpenOutPut = document.createElement('img');
-                  //XdgOpenOutPut.src = {awardTeaching};
                   XdgOpenOutPut.src = require('./IMG/rewardTeaching.jpg');
-                  var terminalImg = 'terminalImg';
-                  xXdgOpenOutPut.classList.add(terminalImg);
-                  //xXdgOpenOutPut.className = {terminalImg};
-                  //XdgOpenOutPut.innerHTML = '<img src="./IMG/awardDC.png"></img>';
-                  //XdgOpenOutPut.innerHTML = '<img src={awardTeaching} alt="My Image"></img>';
-                  //XdgOpenOutPut.style.backgroundImage = {awardTeaching};
-                  //XdgOpenOutPut.src = './IMG/awardDC.png';
                   terminalStuff.appendChild(XdgOpenOutPut);
                 }
                 break;
               case terminalType.value === "Xdg-open discipline.png":
                 if(IMGsPath === true){
                   var XdgOpenOutPut = document.createElement('img');
-                  XdgOpenOutPut.src = {awardDC};
+                  XdgOpenOutPut.src = require('./IMG/awardDC.png');
                   terminalStuff.appendChild(XdgOpenOutPut);
                 }
                 break;
               case terminalType.value === "Xdg-open diploma.jpg":
                 if(IMGsPath === true){
                   var XdgOpenOutPut = document.createElement('img');
-                  XdgOpenOutPut.src = {diploma};
+                  XdgOpenOutPut.src = require('./IMG/diploma.jpg');
                   terminalStuff.appendChild(XdgOpenOutPut);
                 }
                 break;
