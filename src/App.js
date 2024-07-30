@@ -15,6 +15,7 @@ function App() {
     var skillsPath = false;
     var contactMePath = false;
     var IMGsPath = false;
+    var BlogsVideosPath = false;
   //end 
   function terminal(e) {
     var terminalType = document.getElementById('terminalType');
@@ -25,9 +26,27 @@ function App() {
     if(e.key === "Enter"){
       switch(true) {
         case terminalType.value === "help":
-          var helpCOutput = document.createElement('p');
-          helpCOutput.innerHTML = 'type \"clear\" to clear the terminal screen.<br>type \"whoareyou\" to get info about Lee Cash.<br>type \"pwd\" to know where you are in the file system.<br>type \"ls\" to know what is in the directory you are located in.<br>type \"cd \'name of dir or ~ to return to home dir\'\" to go into a directory.<br>type \"cat \'name of dir\'\" to get info about Lee Cash.<br>type \"Xdg-open \'fileName\'\" to open a IMG in the terminal.<br>commands are cap sensitive';
-          terminalStuff.appendChild(helpCOutput);
+          var helpCOutput1 = document.createElement('p');
+          var helpCOutput2 = document.createElement('p');
+          var helpCOutput3 = document.createElement('p');
+          var helpCOutput4 = document.createElement('p');
+          var helpCOutput5 = document.createElement('p');
+          var helpCOutput6 = document.createElement('p');
+          var helpCOutput7 = document.createElement('p');
+          helpCOutput1.innerHTML = 'type \"clear\" to clear the terminal screen.';
+          helpCOutput2.innerHTML = 'type \"whoareyou\" to get info about Lee Cash.';
+          helpCOutput3.innerHTML = 'type \"ls\" to know what is in the directory you are located in.';
+          helpCOutput4.innerHTML = 'type \"cd \'name of dir or ~ to return to home dir\'\" to go into a directory.';
+          helpCOutput5.innerHTML = 'type \"cat \'name of file\'\" to get the content of the file.';
+          helpCOutput6.innerHTML = 'type \"Xdg-open \'fileName\'\" to open a IMG or video in the terminal.';
+          helpCOutput7.innerHTML = 'commands are cap sensitive and you can click some of the out puts to skip the typing of a command.';
+          terminalStuff.appendChild(helpCOutput1);
+          terminalStuff.appendChild(helpCOutput2);
+          terminalStuff.appendChild(helpCOutput3);
+          terminalStuff.appendChild(helpCOutput4);
+          terminalStuff.appendChild(helpCOutput5);
+          terminalStuff.appendChild(helpCOutput6);
+          terminalStuff.appendChild(helpCOutput7);
           terminalType.value = "";
           break;
           case terminalType.value === "clear":
@@ -47,8 +66,34 @@ function App() {
             }
             if(skillsPath === true){
               var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'javaScript.txt<br>html.txt<br>css.txt<br>BlogsVideos';
+              lsOutPut.innerHTML = 'javaScript.txt<br>html.txt<br>css.txt<br>react.txt<br>blogsVideos';
               terminalStuff.appendChild(lsOutPut);
+            }
+            if(BlogsVideosPath === true){
+              var lsOutPut1 = document.createElement('p');
+              var lsOutPut2 = document.createElement('p');
+              var lsOutPut3 = document.createElement('p');
+              var lsOutPut4 = document.createElement('p');
+              var lsOutPut5 = document.createElement('p');
+              var lsOutPut6 = document.createElement('p');
+              var lsOutPut7 = document.createElement('p');
+              var lsOutPut8 = document.createElement('p');
+              lsOutPut1.innerHTML = 'blog8.MP4  (why)';
+              lsOutPut2.innerHTML = 'blog7.MP4';
+              lsOutPut3.innerHTML = 'blog6.MP4';
+              lsOutPut4.innerHTML = 'blog5.MP4';
+              lsOutPut5.innerHTML = 'blog4.MP4';
+              lsOutPut6.innerHTML = 'blog3.MP4';
+              lsOutPut7.innerHTML = 'blog2.MP4';
+              lsOutPut8.innerHTML = 'blog1.MP4';
+              terminalStuff.appendChild(lsOutPut1);
+              terminalStuff.appendChild(lsOutPut2);
+              terminalStuff.appendChild(lsOutPut3);
+              terminalStuff.appendChild(lsOutPut4);
+              terminalStuff.appendChild(lsOutPut5);
+              terminalStuff.appendChild(lsOutPut6);
+              terminalStuff.appendChild(lsOutPut7);
+              terminalStuff.appendChild(lsOutPut8);
             }
             if(contactMePath === true){
               var lsOutPut = document.createElement('p');
@@ -69,16 +114,18 @@ function App() {
                 skillsPath = false;
                 contactMePath = false;
                 IMGsPath = false;
+                BlogsVideosPath = false;
                 terminalType.value = "";
               }
               break;
-            case terminalType.value === "cd skils":
-                if(homePath === true && terminalType.value === "cd skils"){
+            case terminalType.value === "cd skills":
+                if(homePath === true && terminalType.value === "cd skills"){
                   homePath = false;
                   aboutPath = false;
                   skillsPath = true;
                   contactMePath = false;
                   IMGsPath = false;
+                  BlogsVideosPath = false;
                   terminalType.value = "";
                 }
                 break;
@@ -89,6 +136,7 @@ function App() {
                   skillsPath = false;
                   contactMePath = true;
                   IMGsPath = false;
+                  BlogsVideosPath = false;
                   terminalType.value = "";
                 }
                   break;
@@ -99,15 +147,28 @@ function App() {
                     skillsPath = false;
                     contactMePath = false;
                     IMGsPath = true;
+                    BlogsVideosPath = false;
                     terminalType.value = "";
                   }
-                    break;
+                  break;
+                case terminalType.value === "cd blogsVideos":
+                  if(skillsPath === true && terminalType.value === "cd blogsVideos"){
+                  homePath = false;
+                  aboutPath = false;
+                  skillsPath = false;
+                  contactMePath = false;
+                  IMGsPath = false;
+                  BlogsVideosPath = true;
+                  terminalType.value = "";
+                  }
+                  break;
                 case terminalType.value === "cd ~":
                   homePath = true;
                   aboutPath = false;
                   skillsPath = false;
                   contactMePath = false;
                   IMGsPath = false;
+                  BlogsVideosPath = false;
                   terminalType.value = "";
                   break;
               case terminalType.value === "Xdg-open teachingAward.jpg":
@@ -130,6 +191,90 @@ function App() {
                   XdgOpenOutPut.src = require('./IMG/diploma.jpg');
                   terminalStuff.appendChild(XdgOpenOutPut);
                 }
+                break;
+              case terminalType.value === "cat javaScript.txt":
+                  if(skillsPath === true && terminalType.value === "cat javaScript.txt"){
+                    var textjavascript = document.createElement('p');
+                    textjavascript.innerHTML = 'As you see this website is proof I know how to use javascript.';
+                    terminalStuff.appendChild(textjavascript);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat html.txt":
+                  if(skillsPath === true && terminalType.value === "cat html.txt"){
+                    var texthtml = document.createElement('p');
+                    texthtml.innerHTML = 'As you see this website is proof I know how to use html.';
+                    terminalStuff.appendChild(texthtml);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat css.txt":
+                  if(skillsPath === true && terminalType.value === "cat css.txt"){
+                    var textcss = document.createElement('p');
+                    textcss.innerHTML = 'As you see this website is proof I know how to use css.';
+                    terminalStuff.appendChild(textcss);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat react.txt":
+                  if(skillsPath === true && terminalType.value === "cat react.txt"){
+                    var textreact = document.createElement('p');
+                    textreact.innerHTML = 'As you see this website is proof I know how to use react.';
+                    terminalStuff.appendChild(textreact);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat age.txt":
+                  if(aboutPath === true && terminalType.value === "cat age.txt"){
+                    var textage = document.createElement('p');
+                    textage.innerHTML = 'My age is 20';
+                    terminalStuff.appendChild(textage);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat name.txt":
+                  if(aboutPath === true && terminalType.value === "cat name.txt"){
+                    var textname = document.createElement('p');
+                    textname.innerHTML = 'My name is Lee Cash.';
+                    terminalStuff.appendChild(textname);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat education.txt":
+                  if(aboutPath === true && terminalType.value === "cat education.txt"){
+                    var texteducation = document.createElement('p');
+                    texteducation.innerHTML = 'I have a High school Diploma and I graduated at Hixson High School.';
+                    terminalStuff.appendChild(texteducation);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat phone#.txt":
+                  if(contactMePath === true && terminalType.value === "cat phone#.txt"){
+                    var textphone = document.createElement('p');
+                    textphone.innerHTML = '+1 762 222-3156';
+                    terminalStuff.appendChild(textphone);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "cat email.txt":
+                  if(contactMePath === true && terminalType.value === "cat email.txt"){
+                    var textemail = document.createElement('p');
+                    textemail.innerHTML = 'leecash133@gmail.com';
+                    terminalStuff.appendChild(textemail);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "whoareyou":
+                var whoareyou = document.createElement('p');
+                whoareyou.innerHTML = 'I am LeeCash.<br>I use arch linux as my operating system and I like to learn.';
+                terminalStuff.appendChild(whoareyou);
+                terminalType.value = "";
+                  if(contactMePath === true && terminalType.value === "cat email.txt"){
+                    var textemail = document.createElement('p');
+                    textemail.innerHTML = 'leecash133@gmail.com';
+                    terminalStuff.appendChild(textemail);
+                    terminalType.value = "";
+                  }
                 break;
           default:
             var defaultOutPut = document.createElement('p');
@@ -207,7 +352,7 @@ function App() {
             <img className="meimg" src={MeIMG} alt='404'></img>
             <div className="Pinfo">
                 <div className="PinfoC1"><p>Name: </p><p className="PinfoC1Space">Lee Cash</p></div>
-                <div className="PinfoC1"><p>Age: </p><p className="PinfoC1Space">19</p></div>
+                <div className="PinfoC1"><p>Age: </p><p className="PinfoC1Space">20</p></div>
                 <div className="PinfoC1"><p>Education: </p><p className="PinfoC1Space"> High school Diploma</p></div>
             </div>
         </section>
@@ -235,6 +380,7 @@ function App() {
           <li>JavaScript</li>
           <li>HTML</li>
           <li>Css</li>
+          <li>react</li>
         </ul>
         <h1>Links</h1>
         <ul>
