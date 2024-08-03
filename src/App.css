@@ -36,6 +36,9 @@ header nav ul li button {
 div div div div img {
     width: 100%;
 }
+div div div div iframe {
+    width: 100%;
+}
 div div div div p {
     font-size: 18px;
 }

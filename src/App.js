@@ -16,6 +16,8 @@ function App() {
     var contactMePath = false;
     var IMGsPath = false;
     var BlogsVideosPath = false;
+    //
+    var blogLinks = ['https://www.youtube.com/embed/r-h2IPPMpBo?si=QYezHrv30jGCPQ29', 'https://www.youtube.com/embed/bSdCY3ay8Qk?si=GdEtpMNVbdo2JXCy', 'https://www.youtube.com/embed/_WRFMGZHrGs?si=qleUhM8ltZ3EesUA', 'https://www.youtube.com/embed/ryfU13Vkmls?si=yu7zO8p8D2oI3CGS', 'https://www.youtube.com/embed/s7Ih4r3CFsE?si=JKDVSNr9f_0lhxpd', 'https://www.youtube.com/embed/L2SW84Q7L2I?si=lWbUwU7UbyHAP9M2', 'https://www.youtube.com/embed/H8eIcx-YAtE?si=Wk0M95i93yUk_9fD', 'https://www.youtube.com/embed/gG2aYsNgx88?si=gwOREuZre98uG0FM'];
   //end 
   function terminal(e) {
     var terminalType = document.getElementById('terminalType');
@@ -39,7 +41,7 @@ function App() {
           helpCOutput4.innerHTML = 'type \"cd \'name of dir or ~ to return to home dir\'\" to go into a directory.';
           helpCOutput5.innerHTML = 'type \"cat \'name of file\'\" to get the content of the file.';
           helpCOutput6.innerHTML = 'type \"Xdg-open \'fileName\'\" to open a IMG or video in the terminal.';
-          helpCOutput7.innerHTML = 'commands are cap sensitive and you can click some of the out puts to skip the typing of a command.';
+          helpCOutput7.innerHTML = 'commands are cap sensitive and you can click some of the out puts to skip the typing of a command.<br>If command does nothing and does not get clear when you press enter that means that command is something you can do but not at this time.';
           terminalStuff.appendChild(helpCOutput1);
           terminalStuff.appendChild(helpCOutput2);
           terminalStuff.appendChild(helpCOutput3);
@@ -55,19 +57,46 @@ function App() {
             break;
           case terminalType.value === "ls":
             if(homePath === true){
-              var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'about<br>skills<br>contactMe<br>IMGs';
-              terminalStuff.appendChild(lsOutPut);
+              var lsOutPut1 = document.createElement('p');
+              var lsOutPut2 = document.createElement('p');
+              var lsOutPut3 = document.createElement('p');
+              var lsOutPut4 = document.createElement('p');
+              lsOutPut1.innerHTML = 'about';
+              lsOutPut2.innerHTML = 'skills';
+              lsOutPut3.innerHTML = 'contactMe';
+              lsOutPut4.innerHTML = 'IMGs';
+              terminalStuff.appendChild(lsOutPut1);
+              terminalStuff.appendChild(lsOutPut2);
+              terminalStuff.appendChild(lsOutPut3);
+              terminalStuff.appendChild(lsOutPut4);
             }
             if(aboutPath === true){
-              var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'age.txt<br>name.txt<br>education.txt';
-              terminalStuff.appendChild(lsOutPut);
+              var lsOutPut1 = document.createElement('p');
+              var lsOutPut2 = document.createElement('p');
+              var lsOutPut3 = document.createElement('p');
+              lsOutPut1.innerHTML = 'age.txt';
+              lsOutPut2.innerHTML = 'name.txt';
+              lsOutPut3.innerHTML = 'education.txt';
+              terminalStuff.appendChild(lsOutPut1);
+              terminalStuff.appendChild(lsOutPut2);
+              terminalStuff.appendChild(lsOutPut3);
             }
             if(skillsPath === true){
-              var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'javaScript.txt<br>html.txt<br>css.txt<br>react.txt<br>blogsVideos';
-              terminalStuff.appendChild(lsOutPut);
+              var lsOutPut1 = document.createElement('p');
+              var lsOutPut2 = document.createElement('p');
+              var lsOutPut3 = document.createElement('p');
+              var lsOutPut4 = document.createElement('p');
+              var lsOutPut5 = document.createElement('p');
+              lsOutPut1.innerHTML = 'javaScript.txt';
+              lsOutPut2.innerHTML = 'html.txt';
+              lsOutPut3.innerHTML = 'css.txt';
+              lsOutPut4.innerHTML = 'react.txt';
+              lsOutPut5.innerHTML = 'blogsVideos';
+              terminalStuff.appendChild(lsOutPut1);
+              terminalStuff.appendChild(lsOutPut2);
+              terminalStuff.appendChild(lsOutPut3);
+              terminalStuff.appendChild(lsOutPut4);
+              terminalStuff.appendChild(lsOutPut5);
             }
             if(BlogsVideosPath === true){
               var lsOutPut1 = document.createElement('p');
@@ -96,14 +125,23 @@ function App() {
               terminalStuff.appendChild(lsOutPut8);
             }
             if(contactMePath === true){
-              var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'email.txt<br>phone#.txt';
-              terminalStuff.appendChild(lsOutPut);
+              var lsOutPut1 = document.createElement('p');
+              var lsOutPut2 = document.createElement('p');
+              lsOutPut1.innerHTML = 'email.txt';
+              lsOutPut2.innerHTML = 'phone#.txt';
+              terminalStuff.appendChild(lsOutPut1);
+              terminalStuff.appendChild(lsOutPut2);
             }
             if(IMGsPath === true){
-              var lsOutPut = document.createElement('p');
-              lsOutPut.innerHTML = 'teachingAward.jpg<br>discipline.png<br>diploma.jpg';
-              terminalStuff.appendChild(lsOutPut);
+              var lsOutPut1 = document.createElement('p');
+              var lsOutPut2 = document.createElement('p');
+              var lsOutPut3 = document.createElement('p');
+              lsOutPut1.innerHTML = 'teachingAward.jpg';
+              lsOutPut2.innerHTML = 'discipline.png';
+              lsOutPut3.innerHTML = 'diploma.jpg';
+              terminalStuff.appendChild(lsOutPut1);
+              terminalStuff.appendChild(lsOutPut2);
+              terminalStuff.appendChild(lsOutPut3);
             }
             terminalType.value = "";
             break;
@@ -176,6 +214,7 @@ function App() {
                   var XdgOpenOutPut = document.createElement('img');
                   XdgOpenOutPut.src = require('./IMG/rewardTeaching.jpg');
                   terminalStuff.appendChild(XdgOpenOutPut);
+                  terminalType.value = "";
                 }
                 break;
               case terminalType.value === "Xdg-open discipline.png":
@@ -183,6 +222,7 @@ function App() {
                   var XdgOpenOutPut = document.createElement('img');
                   XdgOpenOutPut.src = require('./IMG/awardDC.png');
                   terminalStuff.appendChild(XdgOpenOutPut);
+                  terminalType.value = "";
                 }
                 break;
               case terminalType.value === "Xdg-open diploma.jpg":
@@ -190,7 +230,72 @@ function App() {
                   var XdgOpenOutPut = document.createElement('img');
                   XdgOpenOutPut.src = require('./IMG/diploma.jpg');
                   terminalStuff.appendChild(XdgOpenOutPut);
+                  terminalType.value = "";
                 }
+                break;
+              case terminalType.value === "Xdg-open blog1.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[0];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog2.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[1];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog3.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[2];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog4.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[3];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog5.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[4];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog6.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[5];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog7.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[6];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
+                break;
+              case terminalType.value === "Xdg-open blog8.MP4":
+                  if(BlogsVideosPath === true){
+                    var XdgOpenOutPut = document.createElement('iframe');
+                    XdgOpenOutPut.src = blogLinks[7];
+                    terminalStuff.appendChild(XdgOpenOutPut);
+                    terminalType.value = "";
+                  }
                 break;
               case terminalType.value === "cat javaScript.txt":
                   if(skillsPath === true && terminalType.value === "cat javaScript.txt"){
