@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/digital-portfolio-react/static/css/main.c6f1df6f.css",
+    "main.css": "/digital-portfolio-react/static/css/main.2272bda4.css",
     "main.js": "/digital-portfolio-react/static/js/main.eadcbad4.js",
     "static/js/453.dc298bb9.chunk.js": "/digital-portfolio-react/static/js/453.dc298bb9.chunk.js",
     "static/media/diploma.jpg": "/digital-portfolio-react/static/media/diploma.8691ee28aadc2bed92bc.jpg",
@@ -10,12 +10,12 @@
     "static/media/meG.jpg": "/digital-portfolio-react/static/media/meG.d43332df85f1b10b60a1.jpg",
     "static/media/clickHere.gif": "/digital-portfolio-react/static/media/clickHere.af0e05e5e4070abf3b11.gif",
     "index.html": "/digital-portfolio-react/index.html",
-    "main.c6f1df6f.css.map": "/digital-portfolio-react/static/css/main.c6f1df6f.css.map",
+    "main.2272bda4.css.map": "/digital-portfolio-react/static/css/main.2272bda4.css.map",
     "main.eadcbad4.js.map": "/digital-portfolio-react/static/js/main.eadcbad4.js.map",
     "453.dc298bb9.chunk.js.map": "/digital-portfolio-react/static/js/453.dc298bb9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6f1df6f.css",
+    "static/css/main.2272bda4.css",
     "static/js/main.eadcbad4.js"
   ]
 }
