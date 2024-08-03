@@ -65,10 +65,7 @@ div div div div p {
     font-size: 100%;
 }
 .tab0SplitD {
-    /*width: 30%;
-    height: 50%;*/
     width: auto;
-    /*height: 60%;*/
 }
 .tab0SplitDImg {
     height: 50vh;
@@ -78,10 +75,8 @@ div div div div p {
     /*margin: 0 auto;*/
 }
 .tab0SplitD2 {
-    /*width: 50%;*/
     width: 80vw;
     height: 100%;
-    /*display: grid;*/
 }
 .main0 {
     height: 100%;
@@ -92,4 +87,39 @@ div div div div p {
 }
 #terminalStuff {
     width: 100%;
+}
+@media screen and (max-width: 956px) {
+    .tab0Split {
+        flex-direction: column;
+    }
+    .tab0SplitD {
+        width: 100vw;
+    }
+    .tab0SplitDImg {
+        height: 50vh;
+        width: 30vw;
+        margin-left: 35vw;
+    }
+    .tab0SplitD2 {
+        width: 100vw;
+        height: 100%;
+    }
+    .helpText1 {
+        background-color: black;
+        color: white;
+        width: 94vw;
+        margin-left: 2vw;
+        border-radius: 10px;
+        border-width: 3px;
+        border-color: white;
+        height: 2vh;
+        font-size: 100%;
+    }
+    #terminalStuff {
+        width: 90vw;
+        margin-left: 10vw;;
+    }
+    div div div div p {
+        font-size: 1.5vw;
+    }
 }
